@@ -1,4 +1,3 @@
-require 'pry' 
 def prime?(number)
   if num <= 1
     false
