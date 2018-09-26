@@ -18,7 +18,7 @@ def prime?(number)
   end
  #  binding.pry
     test_array.each do |testnum|
-      if number % testnum = 0
+      if number % testnum == 0
           is_prime = FALSE   
       end
       end
