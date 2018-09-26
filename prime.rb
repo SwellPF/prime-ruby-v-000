@@ -8,19 +8,16 @@ def prime?(number)
   number.odd?
     end
 #  binding.pry
-    is_prime = TRUE    # assume number is prime until proven otherwise
+    is_prime = true    # assume number is prime until proven otherwise
   if number <= 1 
-     is_prime = FALSE
-     return is_prime
+     false
    end
-   if number == 2 || number == 3
-     return is_prime
+  if number == 2 || number == 3
+     true
   end
  #  binding.pry
-    test_array.each do |testnum|
-      if number % testnum == 0
-          is_prime = FALSE   
+    test_array.all? do |testnum|
+      number % testnum != 0
       end
-      end
-    is_prime
+    
 end
